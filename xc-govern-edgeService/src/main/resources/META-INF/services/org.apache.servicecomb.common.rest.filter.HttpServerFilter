@@ -1,0 +1,2 @@
+#com.xuecheng.govern.gateway.filter.AuthenticationFilter
+com.xuecheng.govern.gateway.filter.MyAuthenticationFilter
