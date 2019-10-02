@@ -7,6 +7,7 @@ mvn -f ../xc-framework-parent/pom.xml install
 mvn -f ../xc-framework-model/pom.xml install
 mvn -f ../xc-framework-utils/pom.xml install
 mvn -f ../xc-framework-common/pom.xml install
+mvn -f ../xc-service-api/pom.xml install
 #使用maven插件构建docker镜像
 mvn -f pom_docker.xml clean package -DskipTests docker:build
 #修改镜像的组织名，以便推送到个人组织内，注意这里xc-edu-cloud-01是新添加的组织名
