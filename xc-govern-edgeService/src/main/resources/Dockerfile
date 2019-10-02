@@ -1,7 +1,7 @@
 FROM java:8
-ENV ARTIFACTID xc-edu-edgeService
+ENV ARTIFACTID xc-govern-edgeservice
 ENV ARTIFACTVERSION 1.0-SNAPSHOT
 ENV HOME_PATH /home
 WORKDIR $HOME_PATH
 ADD /$ARTIFACTID-$ARTIFACTVERSION.jar $HOME_PATH/$ARTIFACTID.jar
-ENTRYPOINT ["java", "-jar", "xc-edu-edgeService.jar"]
+ENTRYPOINT ["java", "-jar", "xc-govern-edgeservice.jar"]

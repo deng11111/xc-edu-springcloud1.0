@@ -1,6 +1,6 @@
 spring:
   application:
-    name: xc-edu-edgeService
+    name: xc-govern-edgeservice
 server:
   port: 50201
 
@@ -9,7 +9,7 @@ APPLICATION_ID: xc-edu-cloud1.0
 # 微服务名称和版本号
 service_description:
   environment: development #代表开发者模式,不升级版本也可以更新注册中心项目
-  name: ${spring.application.name:xc-edu-edgeService}
+  name: ${spring.application.name:xc-govern-edgeservice}
   version: 1.0.0
 # 服务中心和配置中心的地址
 cse:

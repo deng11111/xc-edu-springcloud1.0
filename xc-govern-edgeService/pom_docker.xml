@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>xc-govern-edgeService</artifactId>
+    <artifactId>xc-govern-edgeservice</artifactId>
 
     <dependencies>
         <dependency>
