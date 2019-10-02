@@ -22,7 +22,13 @@ cse:
     client:
       serverUri: https://cse.cn-east-2.myhuaweicloud.com
       refreshMode: 1
-      refresh_interval: 15000
+      refresh_interval: 30
+  handler: #微服务治理相关
+    chain:
+      Provider:
+        default: bizkeeper-provider,qps-flowcontrol-provider
+      Consumer:
+        default: bizkeeper-consumer,loadbalance,qps-flowcontrol-consumer
 # 对外发布的地址，端口号使用server.port
   rest:
     address: 0.0.0.0:${server.port:50201}
